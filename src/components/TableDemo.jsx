@@ -80,8 +80,9 @@ function TableDemo() {
     setRows([
       ...rows,
       {
-        id: rows.length + 1, title: "",
-        summary: "", size: ""
+        id: rows.length + 100, title: "",
+        alltext: "", summary: "",
+         authorid: "", size: ""
       },
     ]);
     setEdit(true);
@@ -130,7 +131,7 @@ function TableDemo() {
       .catch(errorResponse => {
         // For you TODO: show nicely formatted error message and clear form
         console.error(errorResponse);
-        alert(`Error: ${errorResponse}`);
+        //alert(`Error: ${errorResponse}`);
       });
     /*useEffect(() => {
       console.log('component mounted!')
